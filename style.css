@@ -6,8 +6,3 @@ body{
     background-color: gray;  
     padding-left: 15px;
 }
-
-.navbar-brand{
-    display: flex;
-    align-items: flex-end;
-}

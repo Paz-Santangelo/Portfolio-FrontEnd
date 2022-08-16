@@ -2,10 +2,12 @@ body{
     background: #6f6fd8;
 }
 
-.cabecera{
-    background-color: gray;
-    align-items: center;
-    justify-content: space-between;
+#cabecera{
+    background-color: gray;  
+    padding-left: 15px;
+}
+
+.navbar-brand{
     display: flex;
-    padding: 3rem;
+    align-items: flex-end;
 }

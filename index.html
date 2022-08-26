@@ -3,51 +3,132 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="reset.css/reset.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src=" https://use.fontawesome.com/d463a89bd0.js "></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fondo-estrellas.css">
   <title>Portfolio Argentina Programa</title>
 </head>
 
-<body>
-  <header class="container-fluid" id="cabecera">
-    <nav class="navbar navbar-expand-sm justify-content-between">
-      <img class="img-fluid" src="imagenes/APLogo.png" width="200px">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#"><img src="imagenes/icono-linkedin.png" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><img src="imagenes/icono-facebook.png" alt=""></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><img src="imagenes/icono-instagram.png" alt=""></a></li>
+<body class="container-fluid p-4" id="inicio">
+
+  <section class="stars">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+
+  <header>
+    <!------------- BARRA NAVEGACION------------->
+    <nav class="navbar navbar-expand justify-content-between ps-1">
+      <img class="img-fluid" id="logo-AP" src="assets/img/APLogo.png" width="230px">
+      <ul class="navbar-nav align-items-center justify-content-end">
+        <li class="nav-item linkedin"><a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li class="nav-item github"><a class="nav-link" href="#"><i class="fa fa-github"></i>"></i></a></li>
+        <li class="nav-item instagram"><a class="nav-link" href="#"><i class="fa fa-instagram"></i></a></li>
         <!--Button trigger modal-->
-        <li class="nav-item"><a class="nav-link icono-usuario" href="#"><img src="imagenes/icono-usuario6.png" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></a></li>
+        <li class="nav-item user"><a class="nav-link" href="#"><i class="fa fa-user" type="button"
+              data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a></li>
       </ul>
-      <!-- Modal -->
+
+      <!------------- MODAL------------->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+          <div class="modal-content rounded-4 p-1">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h3 class="modal-title text-light" id="exampleModalLabel">Iniciar Sesión</h3>
+              <button type="button" class="btn-close bg-white rounded-circle mb-4" data-bs-dismiss="modal"
+                aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Clave</label>
+              <div class="mt-3 mb-3 row justify-content-center">
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword">
+                  <input class="form-control mb-5" type="text" placeholder="Ingrese su usuario"
+                    aria-label="default input example">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Ingrese su clave">
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Ingresar</button>
+              <button type="button" class="btn">Ingresar</button>
             </div>
           </div>
         </div>
       </div>
     </nav>
   </header>
+
+  <main class="container-fluid mt-4 w-100 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!------------- SOBRE MI------------->
+    <section class="row justify-content-center align-items-center m-4 pe-3">
+      <div class="col-md-3 mb-1 d-flex justify-content-center" id="sobre-mi" >
+        <img class="img-fluid rounded-circle img-thumbnail border-1 mt-4 mb-2" id="foto"
+          src="assets/img/foto-perfil.jpg" alt="">
+      </div>
+      <div class="col-md-9 pt-3 text-white text-center">
+        <h1 class="display-4">María Paz Santangelo</h1>
+        <h3>Developer Full Stack Junior</h3>
+        <p class="mt-4" id="texto-presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero labore
+          quidem ea tempora vitae rem
+          laboriosam nemo repellendus ab ad, quisquam deleniti quos voluptatem, sunt facilis porro. Et, eveniet
+          voluptatem!</p>
+      </div>
+    </section>
+
+    <!------------- EXPERIENCIAS Y EDUCACION ------------->
+    <section class="row d-flex justify-content-center text-white text-center">
+      <div class="row mt-3">
+        <h1 id="experiencia-laboral">Experiencias Laborales</h1>
+      </div>
+      <div class="col-7 card rounded-4 mt-2 p-4">
+        <div class="card-body">
+          <h2 class="card-title">Trabajo 1</h2>
+          <p class="card-subtitle mb-2">Año</p>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas tempora dicta, dolores molestias modi at earum pariatur nemo unde sint dignissimos aperiam nulla accusantium eum repellendus cumque veniam! Dolorum!</p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <h1 id="educacion">Educación</h1>
+      </div>
+      <div class="col-7 card rounded-4 mt-2 p-4">
+        <div class="card-body">
+          <h2 class="card-title">Curso 1</h2>
+          <p class="card-subtitle mb-2">Año</p>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aut nobis eius ratione omnis, iste ducimus cupiditate quia officiis, voluptate adipisci tenetur error. Quaerat officiis maiores quibusdam. Nulla, eum delectus.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!------------- SCROLLSPY ------------->
+    <div class="container-fluid d-flex">
+      <nav class="navbar fixed-bottom navbar-expand justify-content-center rounded-4">
+          <div class="fixed-bottom">
+            <div class="d-flex justify-content-center">
+              <div id="list-example" class="container-fluid d-flex gap-3 flex-row list-group text-center p-1 justify-content-center">
+                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#sobre-mi">Inicio</a>
+                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#experiencia-laboral">Experiencias</a>
+                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#educacion">Educación</a>
+                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Soft Skill</a>
+                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Proyectos</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </div>
+
+  </main>
+
 </body>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

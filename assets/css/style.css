@@ -1,0 +1,454 @@
+/* ------------- HOME --------------- */
+/* Diseño circulos pagina Home*/
+.nav-item{
+    width: 65px; 
+    height: 65px;
+    text-align: center;
+    padding: 1px;
+    border-radius: 50%; 
+    border: 3px solid #d8e2dc;
+    margin: 0 10px;
+ }
+
+/* Diseño iconos en pagina home */
+.nav-item .fa{
+    font-size: 35px;
+    color: #d8e2dc; 
+    margin-top: 3px; 
+   
+ }
+
+.nav-item .fa-github{
+    font-size: 40px;
+} 
+ 
+.nav-item .user{
+     font-size: 40px;
+     color: #d8e2dc; 
+     margin-bottom: 20px;
+     align-items: center;
+     transition: all 0.5s ease;
+  }
+ 
+.nav-item:hover.linkedin{
+     border: 3px solid #1068b1;
+     box-shadow: 0 0 15px #1068b1;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+ .nav-item:hover .fa-linkedin{
+     color: #1068b1;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+ .nav-item:hover.github{
+     border: 3px solid #caced6;
+     box-shadow: 0 0 15px #caced6;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+ .nav-item:hover .fa-github{
+     color: #caced6;
+     text-shadow: 0 0 15px #caced6;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+ 
+ .nav-item:hover.instagram{
+     border: 3px solid #ca1995;
+     box-shadow: 0 0 15px #ca1995;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+ .nav-item:hover .fa-instagram{
+     color: #ca1995;
+     text-shadow: 0 0 15px #ca1995;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+ .nav-item:hover.user{
+     border: 3px solid #05af76;
+     box-shadow: 0 0 15px #05af76;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+ 
+.nav-item:hover .fa-user{
+     color: #05af76;
+     text-shadow: 0 0 15px #05af76;
+     transform: scale(1.1);
+     transition: 0.5s;
+ }
+
+.modal{
+    --bs-modal-width: 600px;
+    --bs-modal-padding: 1rem;
+} 
+
+.modal-header{
+    border:none;
+} 
+
+.btn-close{
+    font-size: 20px;
+}
+
+.btn-close:focus{
+    background: transparent;
+    border-style:none;
+    box-shadow: none;
+}
+
+.modal-title{
+    font-size: 25px;
+}
+
+.modal-content{
+    background: rgba(219, 171, 201, 0.24);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    width: 100%;
+}
+
+.modal-body{
+    font-size: 20px;
+}
+
+.form-control{
+    border-style: none;
+    background: #b392b0;
+    font-size: 25px;
+    color: white;
+}
+
+.form-control:hover{
+    border-style: none;
+    background: #b392b0;
+    box-shadow: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-style: none;
+    background: #b392b0;
+    color: white;
+}
+
+.form-control::placeholder{
+    color: rgb(63, 60, 60);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background: #b392b0;
+    font-size: 25px;
+    color: white;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.modal-footer{
+    border:none;
+}
+
+.btn{
+    background: #692a64;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30%;
+}
+
+.btn:hover{
+    background: #692a64;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#foto{
+    width: 400px;
+}
+
+#texto-presentacion{
+    font-size: 25px;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.116); 
+    backdrop-filter: blur(2px); 
+}
+
+
+/* ------------- PÁGINA ADMIN--------------- */
+/* diseño circulo en pagina admin */
+.dropdown{
+    width: 70px; 
+    height: 70px;
+    text-align: center;
+    border-radius: 50%; 
+    border: 3px solid #d8e2dc;
+    margin: 10px;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.dropdown:hover{
+    border: 3px solid #e71146;
+    box-shadow: 0 0 30px #e71146;
+}
+
+.dropdown-menu{
+    --bs-dropdown-bg: #aa6f9b;
+    --bs-dropdown-font-size: 1.5rem;
+    --bs-dropdown-link-hover-bg: none;
+    --bs-dropdown-link-active-bg: none;
+    --bs-dropdown-border-radius: 0.6rem;
+}
+
+.dropdown-item:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/*icono user pagina admin*/
+.fa-user{
+    font-size: 35px;
+    color: #d8e2dc; 
+    margin-top: 5px; 
+    transition: all 0.5s ease;
+}
+
+.dropdown:hover .fa-user{
+    color: #e71146;
+    text-shadow: 0 0 30px #e71146;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* diseño flechita user */
+.dropdown-toggle{
+    color: #d8e2dc;
+}
+
+.dropdown:hover .dropdown-toggle{
+    color: #e71146;
+    text-shadow: 0 0 30px #e71146;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#sobre-mi-admin{
+    background-color: rgba(255, 255, 255, 0.068); 
+    backdrop-filter: blur(3px); 
+    border-radius: 24px;
+}
+
+.card{
+    --bs-card-spacer-y: 0rem;
+    --bs-card-spacer-x: 0rem;
+}
+
+.card-subtitle{
+    font-size: 150%;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+#circulos-edicion-perfil{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    margin-top: -35px;
+    margin-right: -5px;
+    background: rgb(128, 66, 104);;
+}
+
+#circulos-edicion-perfil:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 15px #a97cc7;
+}
+
+#circulos-edicion{
+    font-size: 25px;
+    width: 45px; 
+    height: 45px;
+    margin-top: -25px;
+    margin-right: 15px;
+    background: rgb(128, 66, 104);
+}
+
+#circulos-edicion:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 15px #a97cc7;
+}
+
+.item-scrollspy{
+    font-size: 20px;
+    --bs-list-group-color: rgb(245, 238, 238);
+    --bs-list-group-bg: #aa6f9b;
+    --bs-list-group-active-color: white;
+    --bs-list-group-active-bg: rgb(173, 22, 123);
+    --bs-list-group-active-border-color: transparent;
+    --bs-list-group-action-hover-color: white;
+    --bs-list-group-action-hover-bg: #aa6f9b;
+    width: 140px;
+}
+
+.item-scrollspy:hover{
+    color: rgb(248, 248, 248);
+    transform: scale(1.03);
+    transition: 0.5s;
+    border: none;
+}
+
+/*barra inferior*/
+#list-example{
+    background-color: rgba(255, 255, 255, 0.116); 
+    backdrop-filter: blur(20px); 
+}
+
+
+/* <---- RESPONSIVE ----> */
+@media(max-width: 768px){
+    .navbar{
+        flex-direction: column;        
+    }
+
+    #logo-AP{
+        width: 180px;
+        margin-bottom: 15px;
+    }
+
+    .navbar-nav{
+        justify-content: center;
+    }
+
+     /* circulos */
+     .nav-item{
+        width: 50px; 
+        height: 50px;
+        border-radius: 50%; 
+        border: 2px solid #d8e2dc;
+        margin: 0 10px;
+        transition: all 0.5s ease;
+     }
+    
+    /* acomodando iconos dentro de los circulos*/
+    .nav-item .fa{
+        font-size: 30px;
+        position: relative;
+        bottom: 6px;
+    }
+   
+    .nav-item:hover.linkedin{
+        border: 2px solid #1068b1;
+    }
+
+    .nav-item .fa-github{
+        margin-top: 5px;
+    }
+  
+    .nav-item:hover.github{
+        border: 2px solid #caced6;
+    }
+
+    .nav-item .fa-instagram{
+        margin-top: 5px;
+    }
+    
+    .nav-item:hover.instagram{
+        border: 2px solid #c7088e;
+    }
+    
+    .nav-item:hover.user{
+        border: 2px solid #05af76;
+    }
+
+    /*Diseño flechita user en pagina admin*/
+    .dropdown{
+        width: 60px; 
+        height: 60px;
+        border-radius: 50%; 
+        border: 3px solid #d8e2dc;
+        float: left;
+    }
+
+    /*icono user pagina admin*/
+    .fa-user{
+        font-size: 30px;
+        color: #d8e2dc; 
+        margin-top: 4px; 
+    }
+
+    /* diseño flechita user */
+    .dropdown-toggle{
+        color: #d8e2dc;
+        position: relative;
+        font-size: 15px;
+    }
+
+    .dropdown-menu{
+        --bs-dropdown-font-size: 1.0rem;
+    }
+    
+    #foto{
+        width: 300px;
+    }  
+
+    #texto-presentacion{
+        font-size: 22px;
+    }
+
+    .modal-title{
+        font-size: 25px;
+    }
+
+    .modal-content{
+        width: 80%;
+    }
+
+    .form-control{
+        font-size: 19px;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .card-title{
+        font-size: 25px;
+    }
+
+    .card-subtitle{
+        font-size: 20px;
+    }
+    
+    .card-text{
+        font-size: 20px;
+    }
+
+    .item-scrollspy{
+        font-size: 15px;
+    }
+
+}

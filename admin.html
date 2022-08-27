@@ -107,6 +107,43 @@
 
       </div>
     </section>
+
+     <!------------- SCROLLSPY ------------->
+     <section class="fixed-bottom d-flex justify-content-center">
+      <div class="accordion d-flex justify-content-center w-100" id="accordionExample">
+        <div class="accordion-item text-center" id="barra-inferior">
+          <a class="acordeon-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+            <img class="flecha-acordeon" src="assets/img/icons8-flecha-contraer-50.png" alt="">
+          </a>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row row-cols-3 justify-content-around gap-2 text-center">
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3" href="#sobre-mi-admin">Inicio</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3"
+                    href="#experiencia-laboral">Experiencias</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3"
+                    href="#educacion">Educación</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Soft
+                    Skills</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Proyectos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-------- MODAL SOBRE MI -------->
@@ -205,24 +242,6 @@
       </div>
     </div>
   </div>
-
-  <!------------- SCROLLSPY ------------->
-  <div class="container-fluid d-flex">
-    <nav class="navbar fixed-bottom navbar-expand justify-content-center rounded-4">
-        <div class="fixed-bottom">
-          <div class="d-flex justify-content-center">
-            <div id="list-example" class="container-fluid d-flex gap-3 flex-row list-group text-center p-1 justify-content-center">
-              <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#sobre-mi-admin">Inicio</a>
-              <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#experiencia-laboral">Experiencias</a>
-              <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#educacion">Educación</a>
-              <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Soft Skill</a>
-              <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Proyectos</a>
-            </div>
-          </div>
-        </div>
-    </nav>
-  </div>
-</body>
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

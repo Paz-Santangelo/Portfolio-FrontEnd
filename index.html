@@ -64,13 +64,14 @@
     </nav>
   </header>
 
-  <main class="container-fluid mt-4 w-100 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
-
+  <main class="container-fluid mt-4 w-100 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example"
+    data-bs-smooth-scroll="true" tabindex="0">
+  
     <!------------- SOBRE MI------------->
     <section class="row justify-content-center align-items-center m-4 pe-3">
-      <div class="col-md-3 mb-1 d-flex justify-content-center" id="sobre-mi" >
-        <img class="img-fluid rounded-circle img-thumbnail border-1 mt-4 mb-2" id="foto"
-          src="assets/img/foto-perfil.jpg" alt="">
+      <div class="col-md-3 mb-1 d-flex justify-content-center" id="sobre-mi">
+        <img class="img-fluid rounded-circle img-thumbnail border-1 mt-4 mb-2" id="foto" src="assets/img/foto-perfil.jpg"
+          alt="">
       </div>
       <div class="col-md-9 pt-3 text-white text-center">
         <h1 class="display-4">María Paz Santangelo</h1>
@@ -81,7 +82,7 @@
           voluptatem!</p>
       </div>
     </section>
-
+  
     <!------------- EXPERIENCIAS Y EDUCACION ------------->
     <section class="row d-flex justify-content-center text-white text-center">
       <div class="row mt-3">
@@ -91,10 +92,12 @@
         <div class="card-body">
           <h2 class="card-title">Trabajo 1</h2>
           <p class="card-subtitle mb-2">Año</p>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas tempora dicta, dolores molestias modi at earum pariatur nemo unde sint dignissimos aperiam nulla accusantium eum repellendus cumque veniam! Dolorum!</p>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptas tempora dicta, dolores
+            molestias modi at earum pariatur nemo unde sint dignissimos aperiam nulla accusantium eum repellendus cumque
+            veniam! Dolorum!</p>
         </div>
       </div>
-
+  
       <div class="row mt-5">
         <h1 id="educacion">Educación</h1>
       </div>
@@ -102,28 +105,50 @@
         <div class="card-body">
           <h2 class="card-title">Curso 1</h2>
           <p class="card-subtitle mb-2">Año</p>
-          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aut nobis eius ratione omnis, iste ducimus cupiditate quia officiis, voluptate adipisci tenetur error. Quaerat officiis maiores quibusdam. Nulla, eum delectus.</p>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aut nobis eius ratione omnis,
+            iste ducimus cupiditate quia officiis, voluptate adipisci tenetur error. Quaerat officiis maiores quibusdam.
+            Nulla, eum delectus.</p>
         </div>
       </div>
     </section>
-    
+  
     <!------------- SCROLLSPY ------------->
-    <div class="container-fluid d-flex">
-      <nav class="navbar fixed-bottom navbar-expand justify-content-center rounded-4">
-          <div class="fixed-bottom">
-            <div class="d-flex justify-content-center">
-              <div id="list-example" class="container-fluid d-flex gap-3 flex-row list-group text-center p-1 justify-content-center">
-                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#sobre-mi">Inicio</a>
-                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#experiencia-laboral">Experiencias</a>
-                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#educacion">Educación</a>
-                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Soft Skill</a>
-                <a class=" item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Proyectos</a>
+    <section class="fixed-bottom d-flex justify-content-center">
+      <div class="accordion d-flex justify-content-center w-100" id="accordionExample">
+        <div class="accordion-item text-center" id="barra-inferior">
+          <a class="acordeon-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+            <img class="flecha-acordeon" src="assets/img/icons8-flecha-contraer-50.png" alt="">
+          </a>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row row-cols-3 justify-content-around gap-2 text-center">
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3" href="#sobre-mi">Inicio</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3"
+                    href="#experiencia-laboral">Experiencias</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3"
+                    href="#educacion">Educación</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Soft
+                    Skills</a>
+                </div>
+                <div class="col-auto col-md-auto">
+                  <a class="item-scrollspy list-group-item list-group-item-action rounded-3" href="#">Proyectos</a>
+                </div>
               </div>
             </div>
           </div>
-      </nav>
-    </div>
-
+        </div>
+      </div>
+    </section>
+  
   </main>
 
 </body>

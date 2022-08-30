@@ -261,9 +261,25 @@ textarea:focus{
 }
 
 /********** TARJETAS ADMIN **********/
+.contenedor-cards{
+    width: 70%;
+}
+
+.circle-add-card{
+    background: rgb(128, 66, 104);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+}
+
 .card{
     --bs-card-spacer-y: 0rem;
     --bs-card-spacer-x: 0rem;
+}
+
+#card-job-education{
+    width: 70%;
 }
 
 .card-subtitle{
@@ -280,7 +296,7 @@ textarea:focus{
     height: 60px;
     margin-top: -35px;
     margin-right: -5px;
-    background: rgb(128, 66, 104);;
+    background: rgb(128, 66, 104);
 }
 
 #circulos-edicion-perfil:hover{
@@ -304,13 +320,37 @@ textarea:focus{
     box-shadow: 0 0 15px #a97cc7;
 }
 
+/****** PROYECTOS ADMIN ******/
+  /* Circulos edicion */
+#contenedor-btn-proyecto{
+    margin-top: -20px;
+    
+}
+
+#circulos-edicion-proyecto{
+    font-size: 25px;
+    width: 45px; 
+    height: 45px;
+    margin-right: 5px;
+    background: rgb(128, 66, 104);
+    padding-top: 2px;
+}
+
+#circulos-edicion-proyecto:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0 0 15px #a97cc7;
+}
+
+
 /****** SCROLLSPY ******/
 /*barra inferior*/
 #barra-inferior{
-    background-color: rgba(255, 255, 255, 0.116); 
+    background-color: rgba(165, 25, 123, 0.418); 
     backdrop-filter: blur(30px);
     border-radius: 8px; 
     border:none; 
+    margin-top: 50px;
 }
 
 .accordion-item{
@@ -417,7 +457,7 @@ textarea:focus{
         width: 30px;
     }
 
-
+    
    /*********** PAGINA ADMIN ************/
     /*circulo user*/
     .dropdown{
@@ -460,8 +500,20 @@ textarea:focus{
     }
 
     /***** TARJETAS - CARDS *****/
+    .contenedor-cards{
+        width: 100%;
+    }
 
-    .card{
+    .circle-add-card{
+        background: rgb(128, 66, 104);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: -20px;
+        margin-right: -50px;
+    }
+
+    #card-job-education{
         width: 80%;
     }
 
@@ -476,4 +528,19 @@ textarea:focus{
     .card-text{
         font-size: 20px;
     }
+
+/****** PROYECTOS ADMIN ******/
+    /* Circulos edicion */
+    #contenedor-btn-proyecto{
+        margin-top: -15px;
+        margin-right: 3px;
+    }
+    #circulos-edicion-proyecto{
+        font-size: 20px;
+        width: 35px; 
+        height: 35px;
+        margin-right: 1px;
+        background: rgb(128, 66, 104);
+    }
+
 }
